@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -52,7 +51,8 @@ public class selectRandom : MonoBehaviour
                 else
                     index = 0;
             }
-            else if (availableNumbers.Count == 1){
+            else if (availableNumbers.Count == 1)
+            {
                 count = 4;
                 break;
             }
@@ -61,7 +61,7 @@ public class selectRandom : MonoBehaviour
         }
         lastIndex = index;
         rnd = availableNumbers[index];
-//
+
         skins[rnd].GetComponent<Button>().interactable = true;
         skins[rnd].GetComponent<Image>().color = new Color32(41, 135, 45, 255);
 
